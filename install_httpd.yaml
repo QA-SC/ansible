@@ -1,0 +1,8 @@
+- name: this is to install docker package
+  hosts: all
+  become: true 
+  tasks:
+  - name: Install the latest version of Docker CE
+    yum:
+     name: docker
+     state: present
